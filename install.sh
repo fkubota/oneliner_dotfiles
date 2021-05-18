@@ -32,9 +32,10 @@ if [ ! -d ${DOT_DIR} ]; then
         [[ "$f" == ".DS_Store" ]] && continue
         [[ "$f" == "README.md" ]] && continue
         [[ "$f" == "install.sh" ]] && continue
+        [[ "$f" == "LICENSE" ]] && continue
 
-        ln -snf $DOT_DIR/"$f" $HOME/".$f"
-        echo "Installed .$f"
+        ln -snf $DOT_DIR/"$f" $HOME/"$f"
+        echo "Installed $f"
     done
 else
     echo "dotfiles already exists"
