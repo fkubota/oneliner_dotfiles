@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOT_DIR="$HOME/Git/dotfiles"
+DOT_DIR="$HOME/Git/oneliner_dotfiles"
 
 has() {
     type "$1" > /dev/null 2>&1
